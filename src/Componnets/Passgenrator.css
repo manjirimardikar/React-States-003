@@ -1,0 +1,130 @@
+.passwordcontainer{
+    width: 60%;
+    height: 70%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+    border-radius: 10px;}
+
+  .heading{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .heading h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .inputcontainer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputcontainer input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #e9ecef;
+    padding: 10px;
+
+  }
+  .inputcontainer button{
+    width: 10%;
+    height: 100%;
+    background-color: #138496;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+  .lengthcontainer{
+    width: 100%;
+    height: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .lengthcontainer  label{
+    font-size: 1rem;
+  }
+
+  .lengthcontainer input{
+    width: 12%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+  }
+  
+  .checkboxcontainer{
+    width: 80%;
+    padding: 5px;
+
+  }
+
+  .checkboxcontainer input{
+    margin-right: 10px;
+  }
+
+
+  .generatebtn{
+    width: 100%;
+    height: 12%;
+    margin-top: 1rem;
+  }
+  .generatebtn button{
+    width: 100%;
+    height: 100%;
+    background-color: #138496;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+@media only screen  and (max-width:480px){
+  .passwordcontainer{
+    width: 90%;
+    height: 60%;
+  }
+  .heading h1{
+    font-size: 22px;
+  }
+}
+
+@media only screen  and (min-width:481px) and (max-width:700px){
+  .passwordcontainer{
+    width: 80%;
+    height: 65%;
+  }
+  .heading h1{
+    font-size: 22px;
+  }
+}
+
+@media only screen  and (min-width:701px) and (max-width:900px){
+  .passwordcontainer{
+    width: 70%;
+    height: 65%;
+  }
+  .heading h1{
+    font-size: 22px;
+  }
+}

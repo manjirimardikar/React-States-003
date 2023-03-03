@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Passgenrator from './Componnets/Passgenrator';
+
+
 
 function App() {
+
+  const [Password, setPassword] = useState("")
+  const [Passlength, setPasslength] = useState(8)
+  const [Uppercase, setUppercase] = useState(false)
+  const [Lowercase, setLowercase] = useState(false)
+  const [Number, setNumber] = useState(false)
+  const [Symbols, setSymbols] = useState(false)
+  const [Copied, setCopied] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Passgenrator Password={Password} setPassword={setPassword}
+    Passlength={Passlength} setPasslength={setPasslength}
+    Uppercase={Uppercase} setUppercase={setUppercase}
+    Lowercase={Lowercase} setLowercase={setLowercase}
+    Number={Number} setNumber={setNumber}
+    Symbols={Symbols} setSymbols={setSymbols}
+    Copied={Copied} setCopied={setCopied}/>
+
+     
     </div>
   );
 }
